@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doried-a-a/oufok-npm/tree/master/envReader"
+  },
+  "keywords": [
+    ".env",
+    "environment variables"
+  ]
 }
