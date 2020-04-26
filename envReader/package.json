@@ -1,6 +1,6 @@
 {
   "name": "@oufok/env-reader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reads global configurations from env variables and .env files and makes them available for the node application",
   "main": "envReader.js",
   "scripts": {
