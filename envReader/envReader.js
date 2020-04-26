@@ -52,8 +52,13 @@ function readEnv(keys, pathToEnvFiles, skipMissingFiles = false, ignoreMissingKe
 
                 missingKeys = arrayDiff(missingKeys, Object.keys(map));
             }
-            else if (!skipMissingFiles){
-                throw new Error(`Could not find .env file ${path}`);
+            else {
+                if (skipMissingFiles){
+                    console.info(`Skipping non-existing .env file ${path}`);
+                }
+                else{
+                    throw new Error(`Could not find .env file ${path}`);
+                }
             }
 
         });
